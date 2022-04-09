@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        height: 300px;
+        width: 300px;
+        margin: auto;
+        /* background-color: red; */
+        background-image: linear-gradient(to right,red, yellow);
+        position: absolute;
+        left: 0;
+        transition: 2s;
+        }
+        .container:hover{
+            transform: rotateY(180deg) translateX(-100%);
+
+        }
+
+        @media screen and (max-width:600px) {
+            .container{
+                left: 100px;
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+hello there
+    </div>
+</body>
+</html>
